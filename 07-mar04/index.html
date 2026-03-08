@@ -1,23 +1,286 @@
-<!doctype html>
-<html lang="en" data-theme="cyberpunk">
+<!DOCTYPE html>
+<html lang="en" data-theme="nord">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY Python Website</title>
+    <title>Travel Website</title>
+
+    <!-- DaisyUI & Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <style>
+      .carousel {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-base-100">
+    <!-- Carousel / Header -->
+    <div class="carousel w-full rounded-xl overflow-hidden scroll-smooth">
+      <!-- Slide 1 -->
+      <div id="slide1" class="carousel-item relative w-full h-[50vh]">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80"
+          class="w-full h-full object-cover"
+          alt="Beach"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+        >
+          <h1 class="text-4xl md:text-6xl font-bold">Explore the World</h1>
+          <p class="text-lg md:text-2xl mt-2">
+            Discover new places and adventures
+          </p>
+        </div>
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div id="slide2" class="carousel-item relative w-full h-[50vh]">
+        <img
+          src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1470&q=80"
+          class="w-full h-full object-cover"
+          alt="City"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+        >
+          <h1 class="text-4xl md:text-6xl font-bold">Urban Adventures</h1>
+          <p class="text-lg md:text-2xl mt-2">
+            Experience the city life around the globe
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div id="slide3" class="carousel-item relative w-full h-[50vh]">
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80"
+          class="w-full h-full object-cover"
+          alt="Mountains"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+        >
+          <h1 class="text-4xl md:text-6xl font-bold">Nature Escapes</h1>
+          <p class="text-lg md:text-2xl mt-2">
+            Find peace in mountains, forests, and lakes
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div id="slide4" class="carousel-item relative w-full h-[50vh]">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1470&q=80"
+          class="w-full h-full object-cover"
+          alt="World Map"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+        >
+          <h1 class="text-4xl md:text-6xl font-bold">Plan Your Journey</h1>
+          <p class="text-lg md:text-2xl mt-2">
+            Make your travel dreams come true
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Automatic slide scrolling -->
+    <script>
+      const carousel = document.querySelector(".carousel");
+      const slides = document.querySelectorAll(".carousel-item");
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % slides.length;
+        carousel.scrollTo({
+          left: slides[index].offsetLeft,
+          behavior: "smooth",
+        });
+      }, 5000); 
+    </script>
+
+    <div class="container mx-auto px-4 mt-10">
+      <h2 class="text-3xl font-bold text-center mb-8">
+        Plan Your Dream Vacation with Us
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0319/8721/files/Santorini-Greece.jpg?v=1692093384"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Santorini, Greece</h2>
+            <p>
+              The ancient island of Thira, now known as Santorini, is one of the
+              best destinations for travellers expecting their most romantic
+              holiday. You’ll have the unique experience of staying on an active
+              volcano island with beautiful beaches and an open caldera while
+              still being able to experience the life of the locals. Feel free
+              to indulge in delicious Greek foods and drinks at nearby
+              restaurants. And for those interested in historical sites,
+              Akrotiri of Thira will provide remarkable insights into the past.
+              These archaeological wonders let your glimpse into life from the
+              Bronze Age civilisations to those of the late 17 century BC.
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn text-white bg-blue-500 hover:bg-blue-600">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0319/8721/files/Maldives-Indian-Ocean.jpg?v=1692094093"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Maldives, Indian Ocean</h2>
+            <p>
+              This is probably one of the most popular destinations and is often
+              featured in travellers' adventure books. The beautiful
+              archipelagic state of South Asia is famous for its amazing beaches
+              and relaxing waves. It’s hard to resist the warm water that is at
+              a constant temperature of 25-30℃. When you’ve had your fill of
+              beaches and sand, one of the unique things to do in this paradise
+              is spend a night at an underwater suite. Even if you lodge at a
+              more traditional hotel, you will enjoy the finest luxury one could
+              dream of.
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn text-white bg-blue-500 hover:bg-blue-600">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0319/8721/files/The-Blue-Lagoon-Iceland.jpg?v=1692094333"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">The Blue Lagoon, Iceland</h2>
+            <p>
+              The famous Blue Lagoon of Iceland is more than just another
+              prettiest place in the world. It’s where you can take a dip at
+              your geothermal spa for relaxation and healing. Here, visitors can
+              relax in warm baths surrounded by mineral-rich water, which gives
+              the lagoon its unique colours and many healing effects. Spend your
+              time in the spa as you adopt amazing skincare treatments, in-water
+              massages, mud masks, and more. Enjoy eating delicious foods at the
+              onsite restaurants. And always have the best accommodations at the
+              five-star hotels in the area.
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn text-white bg-blue-500 hover:bg-blue-600">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer
+      class="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
+    >
+      <nav>
+        <h6 class="footer-title text-blue-900">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title text-blue-900">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title text-blue-900">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
   
-
-<!-- Daisy UI -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<!-- Daisy ui themes -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-
-
-</head>
-  <body>
-
-<div class="navbar bg-base-100 shadow-sm">
-  <a class="btn btn-ghost text-xl">daisyUI</a>
-</div>
-</body>
+    <footer class="footer bg-base-200 text-base-content border-base-100 border-t px-10 py-4 ">
+      <aside class="grid-flow-col items-center">
+      <nav class="md:place-self-center md:justify-self-end">
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+            </svg>
+          </a>
+        </div>
+      </aside>
+      </nav>
+    </footer>
+  </body>
 </html>

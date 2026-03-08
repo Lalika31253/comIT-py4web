@@ -1,5 +1,4 @@
-# Last time modified: 03/04/26
-# Author: y44k0v
+# Author: Alina
 
 html_base = ""
 
