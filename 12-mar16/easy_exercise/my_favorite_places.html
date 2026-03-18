@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa268a9feba2ae58d097612f16214181 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fa268a9feba2ae58d097612f16214181" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa268a9feba2ae58d097612f16214181 = L.map(
+                "map_fa268a9feba2ae58d097612f16214181",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b67ef59d8f84f95cd07eb86075f19b57 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b67ef59d8f84f95cd07eb86075f19b57.addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var marker_f11103246b31ee3dfa48191a6349343c = L.marker(
+                [52.3599, 4.8852],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_a9fec581331cb36a6e0221a22f1d9126 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d9643f07e3ba16d21cce979afcfdd4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42d6325a7214e9830c14d33492a3b742 = $(`<div id="html_42d6325a7214e9830c14d33492a3b742" style="width: 100.0%; height: 100.0%;"><b>MUSEUM: Rijksmuseum</b><br>Latitute: 52.3599<br>Longitude: 4.8852<br>Entry Fee: €20</div>`)[0];
+                popup_3d9643f07e3ba16d21cce979afcfdd4b.setContent(html_42d6325a7214e9830c14d33492a3b742);
+            
+        
+
+        marker_f11103246b31ee3dfa48191a6349343c.bindPopup(popup_3d9643f07e3ba16d21cce979afcfdd4b)
+        ;
+
+        
+    
+    
+            marker_f11103246b31ee3dfa48191a6349343c.bindTooltip(
+                `<div>
+                     Rijksmuseum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f11103246b31ee3dfa48191a6349343c.setIcon(icon_a9fec581331cb36a6e0221a22f1d9126);
+            
+    
+            var marker_67c95281f4d5f41147179bd23d4a4549 = L.marker(
+                [52.3584, 4.8811],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_8b86c97f982e821e816505380018ae34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea9a032462719bae6387b1d447c366d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_793dc826452f10b59b75ce7462d6025c = $(`<div id="html_793dc826452f10b59b75ce7462d6025c" style="width: 100.0%; height: 100.0%;"><b>MUSEUM: Van Gogh Museum</b><br>Latitute: 52.3584<br>Longitude: 4.8811<br>Entry Fee: €19</div>`)[0];
+                popup_ea9a032462719bae6387b1d447c366d2.setContent(html_793dc826452f10b59b75ce7462d6025c);
+            
+        
+
+        marker_67c95281f4d5f41147179bd23d4a4549.bindPopup(popup_ea9a032462719bae6387b1d447c366d2)
+        ;
+
+        
+    
+    
+            marker_67c95281f4d5f41147179bd23d4a4549.bindTooltip(
+                `<div>
+                     Van Gogh Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_67c95281f4d5f41147179bd23d4a4549.setIcon(icon_8b86c97f982e821e816505380018ae34);
+            
+    
+            var marker_10f926300632534dec9d1ff266f8dcc2 = L.marker(
+                [52.3752, 4.883],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_ea36f7ab2c9a355cbfa314d1ab0bac7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3c1717df5ba1259285ce1b7201b69d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cc6f0f2c9b57188e0ced7d9dbe95de7 = $(`<div id="html_4cc6f0f2c9b57188e0ced7d9dbe95de7" style="width: 100.0%; height: 100.0%;"><b>MUSEUM: Anne Frank House</b><br>Latitute: 52.3752<br>Longitude: 4.883<br>Entry Fee: €14</div>`)[0];
+                popup_e3c1717df5ba1259285ce1b7201b69d3.setContent(html_4cc6f0f2c9b57188e0ced7d9dbe95de7);
+            
+        
+
+        marker_10f926300632534dec9d1ff266f8dcc2.bindPopup(popup_e3c1717df5ba1259285ce1b7201b69d3)
+        ;
+
+        
+    
+    
+            marker_10f926300632534dec9d1ff266f8dcc2.bindTooltip(
+                `<div>
+                     Anne Frank House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10f926300632534dec9d1ff266f8dcc2.setIcon(icon_ea36f7ab2c9a355cbfa314d1ab0bac7c);
+            
+    
+            var marker_744e5f5754f5f06a7cebd68769aa1a49 = L.marker(
+                [52.358, 4.8818],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_1dac13bda6163191564349c372f13783 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d445368ad3883e7cdbca2bca4782113c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8917023f496bf79a56159d26c8e8fe67 = $(`<div id="html_8917023f496bf79a56159d26c8e8fe67" style="width: 100.0%; height: 100.0%;"><b>MUSEUM: Stedelijk Museum</b><br>Latitute: 52.358<br>Longitude: 4.8818<br>Entry Fee: €17</div>`)[0];
+                popup_d445368ad3883e7cdbca2bca4782113c.setContent(html_8917023f496bf79a56159d26c8e8fe67);
+            
+        
+
+        marker_744e5f5754f5f06a7cebd68769aa1a49.bindPopup(popup_d445368ad3883e7cdbca2bca4782113c)
+        ;
+
+        
+    
+    
+            marker_744e5f5754f5f06a7cebd68769aa1a49.bindTooltip(
+                `<div>
+                     Stedelijk Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_744e5f5754f5f06a7cebd68769aa1a49.setIcon(icon_1dac13bda6163191564349c372f13783);
+            
+    
+            var marker_02c6a270815ce504ce9bec0d6b3b5ac0 = L.marker(
+                [52.367, 4.9471],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_0af0aaee2e8138bcdb77a32bda7ef3c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f33d61eba707ada0097b9e074b15d0b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dfc94f8f0cedba0b8c72f7a5575057e = $(`<div id="html_9dfc94f8f0cedba0b8c72f7a5575057e" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT: De Kas</b><br>Food: Dutch</div>`)[0];
+                popup_f33d61eba707ada0097b9e074b15d0b1.setContent(html_9dfc94f8f0cedba0b8c72f7a5575057e);
+            
+        
+
+        marker_02c6a270815ce504ce9bec0d6b3b5ac0.bindPopup(popup_f33d61eba707ada0097b9e074b15d0b1)
+        ;
+
+        
+    
+    
+            marker_02c6a270815ce504ce9bec0d6b3b5ac0.bindTooltip(
+                `<div>
+                     De Kas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02c6a270815ce504ce9bec0d6b3b5ac0.setIcon(icon_0af0aaee2e8138bcdb77a32bda7ef3c8);
+            
+    
+            var marker_24550f0ee4b251dd31b8061d91478483 = L.marker(
+                [52.36, 4.8852],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_e7f8144ed98ebcc9925464b5910ed109 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6356d168ca01b70b5be42703f812127e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f86f863cdd6815928df0fadb06d4937b = $(`<div id="html_f86f863cdd6815928df0fadb06d4937b" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT: Restaurant Rijks</b><br>Food: European</div>`)[0];
+                popup_6356d168ca01b70b5be42703f812127e.setContent(html_f86f863cdd6815928df0fadb06d4937b);
+            
+        
+
+        marker_24550f0ee4b251dd31b8061d91478483.bindPopup(popup_6356d168ca01b70b5be42703f812127e)
+        ;
+
+        
+    
+    
+            marker_24550f0ee4b251dd31b8061d91478483.bindTooltip(
+                `<div>
+                     Restaurant Rijks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24550f0ee4b251dd31b8061d91478483.setIcon(icon_e7f8144ed98ebcc9925464b5910ed109);
+            
+    
+            var marker_21191af32f0b7b163e9fe7d65ad099b3 = L.marker(
+                [52.3665, 4.881],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_dee0226aed7236810f858f20ba4094fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_371c15e842b339657a56afb97b53c916 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c541b4fc4bdccd02f74e0f6fa65f61a = $(`<div id="html_8c541b4fc4bdccd02f74e0f6fa65f61a" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT: Ciel Bleu</b><br>Food: French</div>`)[0];
+                popup_371c15e842b339657a56afb97b53c916.setContent(html_8c541b4fc4bdccd02f74e0f6fa65f61a);
+            
+        
+
+        marker_21191af32f0b7b163e9fe7d65ad099b3.bindPopup(popup_371c15e842b339657a56afb97b53c916)
+        ;
+
+        
+    
+    
+            marker_21191af32f0b7b163e9fe7d65ad099b3.bindTooltip(
+                `<div>
+                     Ciel Bleu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21191af32f0b7b163e9fe7d65ad099b3.setIcon(icon_dee0226aed7236810f858f20ba4094fc);
+            
+    
+            var marker_83726e7a66f4a618ea6207029264c40c = L.marker(
+                [52.3752, 4.8921],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_1aeef74d125749accb2de651f283b049 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6cd2025587e69885dcf0d152474ee1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be05f8b8d0d626f2958e73dc3848b98a = $(`<div id="html_be05f8b8d0d626f2958e73dc3848b98a" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT: Moeders</b><br>Food: Dutch</div>`)[0];
+                popup_b6cd2025587e69885dcf0d152474ee1f.setContent(html_be05f8b8d0d626f2958e73dc3848b98a);
+            
+        
+
+        marker_83726e7a66f4a618ea6207029264c40c.bindPopup(popup_b6cd2025587e69885dcf0d152474ee1f)
+        ;
+
+        
+    
+    
+            marker_83726e7a66f4a618ea6207029264c40c.bindTooltip(
+                `<div>
+                     Moeders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83726e7a66f4a618ea6207029264c40c.setIcon(icon_1aeef74d125749accb2de651f283b049);
+            
+    
+            var marker_d3e1bb97ad3e2033ba51f269cfd4d141 = L.marker(
+                [52.3584, 4.8683],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_b3aabb48c95b03ae285d8b1a1d274083 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f94b9c67f5e7292603489d7101f7a03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6049e9ddce3f04b63a1404603c05ecc1 = $(`<div id="html_6049e9ddce3f04b63a1404603c05ecc1" style="width: 100.0%; height: 100.0%;"><b>PARK: Vondelpark</b><br>Playground: Yes</div>`)[0];
+                popup_4f94b9c67f5e7292603489d7101f7a03.setContent(html_6049e9ddce3f04b63a1404603c05ecc1);
+            
+        
+
+        marker_d3e1bb97ad3e2033ba51f269cfd4d141.bindPopup(popup_4f94b9c67f5e7292603489d7101f7a03)
+        ;
+
+        
+    
+    
+            marker_d3e1bb97ad3e2033ba51f269cfd4d141.bindTooltip(
+                `<div>
+                     Vondelpark
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3e1bb97ad3e2033ba51f269cfd4d141.setIcon(icon_b3aabb48c95b03ae285d8b1a1d274083);
+            
+    
+            var marker_1cce8c0e1e73e3ef003c1110e9e5bff8 = L.marker(
+                [52.3542, 4.9201],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_35788a1ce0007a3814896f06c3297dbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a807af43c119f5f31841c04290bc0f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d9e411f1b8961d49edfc9e49a0bf9e8 = $(`<div id="html_4d9e411f1b8961d49edfc9e49a0bf9e8" style="width: 100.0%; height: 100.0%;"><b>PARK: Oosterpark</b><br>Playground: Yes</div>`)[0];
+                popup_3a807af43c119f5f31841c04290bc0f2.setContent(html_4d9e411f1b8961d49edfc9e49a0bf9e8);
+            
+        
+
+        marker_1cce8c0e1e73e3ef003c1110e9e5bff8.bindPopup(popup_3a807af43c119f5f31841c04290bc0f2)
+        ;
+
+        
+    
+    
+            marker_1cce8c0e1e73e3ef003c1110e9e5bff8.bindTooltip(
+                `<div>
+                     Oosterpark
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1cce8c0e1e73e3ef003c1110e9e5bff8.setIcon(icon_35788a1ce0007a3814896f06c3297dbf);
+            
+    
+            var marker_e52358f1ac2dcb9e34e7a74bc805693c = L.marker(
+                [52.3874, 4.8728],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_b4228a8325eae2a7e56f67e88b57835f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf9020268958229691f86e9baa10474c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8780477b9c2719196eb88b5b28d04f6c = $(`<div id="html_8780477b9c2719196eb88b5b28d04f6c" style="width: 100.0%; height: 100.0%;"><b>PARK: Westerpark</b><br>Playground: Yes</div>`)[0];
+                popup_bf9020268958229691f86e9baa10474c.setContent(html_8780477b9c2719196eb88b5b28d04f6c);
+            
+        
+
+        marker_e52358f1ac2dcb9e34e7a74bc805693c.bindPopup(popup_bf9020268958229691f86e9baa10474c)
+        ;
+
+        
+    
+    
+            marker_e52358f1ac2dcb9e34e7a74bc805693c.bindTooltip(
+                `<div>
+                     Westerpark
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e52358f1ac2dcb9e34e7a74bc805693c.setIcon(icon_b4228a8325eae2a7e56f67e88b57835f);
+            
+    
+            var marker_2e56173e9f7dcf9d842f0d7cf577788f = L.marker(
+                [52.3571, 4.8999],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_e554cf6cf0047f5b4bcc6fc5a228ab72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2604ca02a44ff3a5e40756de1366953 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf1e83216b9d42c3280dc9b3e099f7ed = $(`<div id="html_bf1e83216b9d42c3280dc9b3e099f7ed" style="width: 100.0%; height: 100.0%;"><b>PARK: Sarphatipark</b><br>Playground: Yes</div>`)[0];
+                popup_e2604ca02a44ff3a5e40756de1366953.setContent(html_bf1e83216b9d42c3280dc9b3e099f7ed);
+            
+        
+
+        marker_2e56173e9f7dcf9d842f0d7cf577788f.bindPopup(popup_e2604ca02a44ff3a5e40756de1366953)
+        ;
+
+        
+    
+    
+            marker_2e56173e9f7dcf9d842f0d7cf577788f.bindTooltip(
+                `<div>
+                     Sarphatipark
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e56173e9f7dcf9d842f0d7cf577788f.setIcon(icon_e554cf6cf0047f5b4bcc6fc5a228ab72);
+            
+    
+            var marker_f7b3250a0aff5fb31678208ea6610d30 = L.marker(
+                [52.3702, 4.8952],
+                {
+}
+            ).addTo(map_fa268a9feba2ae58d097612f16214181);
+        
+    
+            var icon_cbfe7993cd0d503718ba71ff95b3788c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc4a656e6f22f7b635b305c168bb6091 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bca17cc711bd5eae94b54354fa659212 = $(`<div id="html_bca17cc711bd5eae94b54354fa659212" style="width: 100.0%; height: 100.0%;"><b>CAFE: Cafe Amsterdam</b><br>Food: Cafe<br>WI-FI: Yes</div>`)[0];
+                popup_dc4a656e6f22f7b635b305c168bb6091.setContent(html_bca17cc711bd5eae94b54354fa659212);
+            
+        
+
+        marker_f7b3250a0aff5fb31678208ea6610d30.bindPopup(popup_dc4a656e6f22f7b635b305c168bb6091)
+        ;
+
+        
+    
+    
+            marker_f7b3250a0aff5fb31678208ea6610d30.bindTooltip(
+                `<div>
+                     Cafe Amsterdam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7b3250a0aff5fb31678208ea6610d30.setIcon(icon_cbfe7993cd0d503718ba71ff95b3788c);
+            
+</script>
+</html>
