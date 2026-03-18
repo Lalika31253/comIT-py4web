@@ -416,7 +416,6 @@ BONUS CHALLENGE 3: Add markers for YOUR city
 Look up coordinates for your favorite places in YOUR city
 Use Google Maps to find coordinates (right-click on a place)
 """
-# Challanges solutution
 
 class Cafe(Restaurant):
 
